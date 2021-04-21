@@ -1,0 +1,46 @@
+html {
+    background: black;
+    color: whitesmoke;
+    font-family: monospace;
+}
+
+.led-buttons .led {
+    width: 5em;
+    height: 5em;
+    border: none;
+    padding: 0px;
+    border-radius: 50%;
+    margin: 2em;
+}
+
+.led-buttons .led.off {
+    filter: brightness(0.4);
+}
+
+.led-buttons .led.red {
+    background-color: red;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, 
+        inset #441313 0 -1px 9px,
+        rgba(255, 0, 0, 0.5) 0 2px 12px;
+}
+
+.led-buttons .led.yellow {    
+    background-color: #FF0;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -1px 7px 1px, 
+        inset #808002 0 -1px 9px, 
+        #ff0 0 2px 12px;
+}
+
+.led-buttons .led.green {
+    background-color: #ABFF00;
+    box-shadow: rgba(0, 0, 0, .2) 0 -1px 7px 1px, 
+        inset #304701 0 -1px 9px, 
+        #89ff00 0 2px 12px;
+}
+
+.led-buttons .led.blue {
+    background-color: #24E0FF;
+    box-shadow: rgba(0, 0, 0, .2) 0 -1px 7px 1px, 
+        inset #006 0 -1px 9px, 
+        #3f8cff 0 2px 14px;
+}
