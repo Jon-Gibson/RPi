@@ -11,6 +11,15 @@ class Output:
     def turn_off(self):
         gpio.output_off(self.id)
 
+    def is_on(self):
+        return gpio.input(self.id) == 1
+
+    def toggle(self):
+        if self.is_on():
+            self.turn_off()
+        else:
+            self.turn_on()
+
 def turn_off_all(outputs, sleep_time = 0):
     for _, output in outputs.items():
         output.turn_off()
